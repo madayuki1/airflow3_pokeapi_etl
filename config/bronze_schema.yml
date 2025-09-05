@@ -1,0 +1,67 @@
+pokemon:
+  id: int
+  name: str
+  is_default: bool
+  location_area_encounters: str
+  base_experience: int
+  height: int
+  weight: int
+  order: int
+  cries: str
+  forms: str
+  abilities: str
+  held_items: str
+  moves: str
+  species: str
+  stats: str
+  types: str
+pokemon_species:
+  id: int
+  name: str
+  order: int
+  base_happiness: int
+  capture_rate: int
+  color: str
+  evolution_chain: str
+  egg_groups: str
+  evolves_from_species: str
+  forms_switchable: str
+  gender_rate: int
+  growth_rate: str
+  habitat: str
+  has_gender_differences: str
+  hatch_counter: int
+  is_baby: bool
+  is_legendary: bool
+  is_mythical: bool
+  shape: str
+  varieties: str
+  generation: str
+type:
+  id: int
+  name: str
+  generation: str
+  move_damage_class: str
+  damage_relations: str
+  names: str
+ability:
+  id: int
+  name: str
+  is_main_series: bool
+  generation: str
+  names: str
+  effect_entries: str
+  effect_changes: str
+  flavor_text_entries: str
+move:
+  id: int
+  name: str
+  accuracy: int
+  effect_chance: int
+  pp: int
+  priority: int
+  power: int
+  damage_class: str
+  generation: str
+  target: str
+  type: str

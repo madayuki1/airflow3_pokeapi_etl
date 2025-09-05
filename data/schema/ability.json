@@ -1,0 +1,114 @@
+[
+    {
+        "name": "id",
+        "type": "INT64",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "name",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "is_main_series",
+        "type": "BOOL",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "generation",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "url",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "effect_entries",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "effect",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "short_effect",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "language",
+                "type": "RECORD",
+                "mode": "NULLABLE",
+                "fields": [
+                    {
+                        "name": "name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "url",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "flavor_text_entries",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "flavor_text",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "language",
+                "type": "RECORD",
+                "mode": "NULLABLE",
+                "fields": [
+                    {
+                        "name": "name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "url",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            },
+            {
+                "name": "version_group",
+                "type": "RECORD",
+                "mode": "NULLABLE",
+                "fields": [
+                    {
+                        "name": "name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "url",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            }
+        ]
+    }
+]

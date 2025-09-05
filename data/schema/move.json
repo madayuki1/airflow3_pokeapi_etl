@@ -1,0 +1,105 @@
+[
+    {
+        "name": "id",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "accuracy",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "effect_chance",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "pp",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "priority",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "power",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "damage_class",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "url",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "generation",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "url",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "target",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "url",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "type",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "url",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    }
+]

@@ -1,0 +1,5 @@
+pandas==2.3.0
+pyarrow==20.0.0
+apache-airflow[google]
+requests==2.32.4
+numpy==2.3.1

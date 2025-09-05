@@ -1,0 +1,36 @@
+etl_plan:
+  type:
+    endpoint: "https://pokeapi.co/api/v2/type"
+    class: Type
+    transform_class: TypeTransform
+    call_mode: single
+    batch_size: 300
+    dependencies: [] 
+  move:
+    endpoint: "https://pokeapi.co/api/v2/move"
+    class: Move
+    transform_class: MoveTransform
+    call_mode: batch
+    batch_size: 300
+    dependencies: ["type"] 
+  ability:
+    endpoint: "https://pokeapi.co/api/v2/ability"
+    class: Ability
+    transform_class: AbilityTransform
+    call_mode: batch
+    batch_size: 300
+    dependencies: ["move"] 
+  pokemon:
+    endpoint: "https://pokeapi.co/api/v2/pokemon"
+    class: Pokemon
+    transform_class: PokemonTransform
+    call_mode: batch
+    batch_size: 300
+    dependencies: ["ability"]
+  pokemon_species:
+    endpoint: "https://pokeapi.co/api/v2/pokemon-species"
+    class: PokemonSpecies
+    transform_class: PokemonSpeciesTransform
+    call_mode: batch
+    batch_size: 300
+    dependencies: ["pokemon"]

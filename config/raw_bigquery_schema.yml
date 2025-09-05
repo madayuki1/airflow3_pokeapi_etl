@@ -1,0 +1,199 @@
+pokemon:
+  - name: id
+    data_type: INT64
+    mode: REQUIRED
+  - name: name
+    data_type: STRING
+    mode: NULLABLE
+  - name: is_default
+    data_type: BOOLEAN 
+    mode: NULLABLE
+  - name: location_area_encounters
+    data_type: STRING
+    mode: NULLABLE
+  - name: base_experience
+    data_type: INT64
+    mode: NULLABLE
+  - name: height
+    data_type: INT64
+    mode: NULLABLE
+  - name: weight
+    data_type: INT64
+    mode: NULLABLE
+  - name: order
+    data_type: INT64
+    mode: NULLABLE
+  - name: cries
+    data_type: STRING
+    mode: NULLABLE
+  - name: forms
+    data_type: STRING
+    mode: NULLABLE
+  - name: abilities
+    data_type: STRING
+    mode: NULLABLE
+  - name: held_items
+    data_type: STRING
+    mode: NULLABLE
+  - name: moves
+    data_type: STRING
+    mode: NULLABLE
+  - name: species
+    data_type: STRING
+    mode: NULLABLE
+  - name: stats
+    data_type: RECORD
+    mode: REPEATED
+    fields:
+      - name: base_stat
+        data_type: INT64
+        mode: NULLABLE
+  - name: types
+    data_type: STRING
+    mode: NULLABLE
+
+pokemon_species:
+  - name: id
+    data_type: INT64
+    mode: REQUIRED
+  - name: name
+    data_type: STRING
+    mode: NULLABLE
+  - name: order
+    data_type: INT64
+    mode: NULLABLE
+  - name: base_happiness
+    data_type: INT64
+    mode: NULLABLE
+  - name: capture_rate
+    data_type: INT64
+    mode: NULLABLE
+  - name: color
+    data_type: STRING
+    mode: NULLABLE
+  - name: evolution_chain
+    data_type: STRING
+    mode: NULLABLE
+  - name: egg_groups
+    data_type: STRING
+    mode: NULLABLE
+  - name: evolves_from_species
+    data_type: STRING
+    mode: NULLABLE
+  - name: forms_switchable
+    data_type: STRING
+    mode: NULLABLE
+  - name: gender_rate
+    data_type: INT64
+    mode: NULLABLE
+  - name: growth_rate
+    data_type: STRING
+    mode: NULLABLE
+  - name: habitat
+    data_type: STRING
+    mode: NULLABLE
+  - name: has_gender_differences
+    data_type: STRING
+    mode: NULLABLE
+  - name: hatch_counter
+    data_type: INT64
+    mode: NULLABLE
+  - name: is_baby
+    data_type: BOOLEAN 
+    mode: NULLABLE
+  - name: is_legendary
+    data_type: BOOLEAN 
+    mode: NULLABLE
+  - name: is_mythical
+    data_type: BOOLEAN 
+    mode: NULLABLE
+  - name: shape
+    data_type: STRING
+    mode: NULLABLE
+  - name: varieties
+    data_type: STRING
+    mode: NULLABLE
+  - name: generation
+    data_type: STRING
+    mode: NULLABLE
+
+type:
+  - name: id
+    data_type: INT64
+    mode: REQUIRED
+  - name: name
+    data_type: STRING
+    mode: NULLABLE
+  - name: generation
+    data_type: STRING
+    mode: NULLABLE
+  - name: move_damage_class
+    data_type: STRING
+    mode: NULLABLE
+  - name: damage_relations
+    data_type: STRING
+    mode: NULLABLE
+  - name: names
+    data_type: STRING
+    mode: NULLABLE
+
+ability:
+  - name: id
+    data_type: INT64
+    mode: REQUIRED
+  - name: name
+    data_type: STRING
+    mode: NULLABLE
+  - name: is_main_series
+    data_type: BOOLEAN 
+    mode: NULLABLE
+  - name: generation
+    data_type: STRING
+    mode: NULLABLE
+  - name: names
+    data_type: STRING
+    mode: NULLABLE
+  - name: effect_entries
+    data_type: STRING
+    mode: NULLABLE
+  - name: effect_changes
+    data_type: STRING
+    mode: NULLABLE
+  - name: flavor_text_entries
+    data_type: STRING
+    mode: NULLABLE
+
+move:
+  - name: id
+    data_type: INT64
+    mode: REQUIRED
+  - name: name
+    data_type: STRING
+    mode: NULLABLE
+  - name: accuracy
+    data_type: INT64
+    mode: NULLABLE
+  - name: effect_chance
+    data_type: INT64
+    mode: NULLABLE
+  - name: pp
+    data_type: INT64
+    mode: NULLABLE
+  - name: priority
+    data_type: INT64
+    mode: NULLABLE
+  - name: power
+    data_type: INT64
+    mode: NULLABLE
+  - name: damage_class
+    data_type: STRING
+    mode: NULLABLE
+  - name: generation
+    data_type: STRING
+    mode: NULLABLE
+  - name: target
+    data_type: STRING
+    mode: NULLABLE
+  - name: type
+    data_type: STRING
+    mode: NULLABLE

@@ -1,0 +1,209 @@
+[
+    {
+        "name": "id",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "base_experience",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "height",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "is_default",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "order",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "weight",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "forms",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "url",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "held_items",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "item",
+                "type": "RECORD",
+                "mode": "NULLABLE",
+                "fields": [
+                    {
+                        "name": "name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "url",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            },
+            {
+                "name": "version_details",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                    {
+                        "name": "rarity",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "version",
+                        "type": "RECORD",
+                        "mode": "NULLABLE",
+                        "fields": [
+                            {
+                                "name": "name",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "url",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "location_area_encounters",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "species",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "url",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "cries",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "latest",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "legacy",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "stats",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "base_stat",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "effort",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "stat",
+                "type": "RECORD",
+                "mode": "NULLABLE",
+                "fields": [
+                    {
+                        "name": "name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "url",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "types",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "slot",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "type",
+                "type": "RECORD",
+                "mode": "NULLABLE",
+                "fields": [
+                    {
+                        "name": "name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "url",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            }
+        ]
+    }
+]
